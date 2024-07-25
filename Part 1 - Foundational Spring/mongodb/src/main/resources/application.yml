@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: mongodb
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: mongotestdb
+
+server:
+    port: 9090
+

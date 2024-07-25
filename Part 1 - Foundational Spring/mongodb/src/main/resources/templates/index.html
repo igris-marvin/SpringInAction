@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+
+        <form th:object="${emp_dto}" th:action="@{/employee/insert}" method="POST">
+            <table>
+                <tr>
+                    <td>Employee Name</td>
+                    <td><input type="text" th:field="*{ename}" ></td>
+                </tr>
+                <tr>
+                    <td>Employee Job</td>
+                    <td><input type="text" th:field="*{job}" ></td>
+                </tr>
+                <tr>
+                    <td>Employee Salary</td>
+                    <td><input type="number" th:field="*{sal}" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Insert"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

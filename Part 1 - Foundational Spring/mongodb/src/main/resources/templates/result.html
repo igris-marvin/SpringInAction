@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <center>
+            <div th:if="${result} == 'TRUE'">
+                <h1 style="color: limegreen;">Employee inserted successfully!</h1>
+            </div>
+            <div th:if="${result} == 'FALSE'">
+                <h1 style="color: red;">Employee insertion unsuccessful</h1>
+            </div>
+
+            <p>
+                <a th:href="@{/}">Back</a>
+            </p>
+        </center>
+    </body>
+</html>
