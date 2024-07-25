@@ -1,5 +1,7 @@
 package com.example.mongodb.api.dto;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,4 +14,5 @@ public class EmployeeDTO {
     private String ename;
     private String job;
     private String sal;
+    private List<String> locs;
 }

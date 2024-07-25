@@ -12,15 +12,23 @@
             <table>
                 <tr>
                     <td>Employee Name</td>
-                    <td><input type="text" th:field="*{ename}" ></td>
+                    <td><input type="text" th:field="*{ename}" required></td>
                 </tr>
                 <tr>
                     <td>Employee Job</td>
-                    <td><input type="text" th:field="*{job}" ></td>
+                    <td><input type="text" th:field="*{job}" required></td>
                 </tr>
                 <tr>
                     <td>Employee Salary</td>
-                    <td><input type="number" th:field="*{sal}" ></td>
+                    <td><input type="number" th:field="*{sal}" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div th:each="x : ${locations}">
+                            <input type="checkbox" name="location" th:field="*{locs}" th:value="${x}" />
+                            <label th:text="${x}" >CHECKBOX_NAME</label>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit" value="Insert"></td>

@@ -1,6 +1,7 @@
 package com.example.mongodb.persistence.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -25,13 +26,17 @@ public class Employee implements Serializable {
     private String job;
     private Double sal;
 
+    private List<Location> locs;
+
     public Employee(
         String ename, 
         String job, 
-        Double sal
+        Double sal,
+        List<Location> locs
     ) {
         this.ename = ename;
         this.job = job;
         this.sal = sal;
+        this.locs = locs;
     }
 }

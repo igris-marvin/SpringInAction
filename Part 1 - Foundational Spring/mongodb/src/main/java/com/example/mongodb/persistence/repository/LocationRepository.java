@@ -3,9 +3,9 @@ package com.example.mongodb.persistence.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.mongodb.persistence.entity.Employee;
+import com.example.mongodb.persistence.entity.Location;
 
 @Repository
-public interface EmployeeRepository extends CrudRepository<Employee, String> {
+public interface LocationRepository extends CrudRepository<Location, String> {
     
 }

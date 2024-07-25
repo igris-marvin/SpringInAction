@@ -6,7 +6,8 @@ spring:
             host: localhost
             port: 27017
             database: mongotestdb
+            repositories:
+                type: auto
 
 server:
     port: 9090
-
