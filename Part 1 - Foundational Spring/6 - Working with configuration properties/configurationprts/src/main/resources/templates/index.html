@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+
+        <div th:each="name, x : ${names}">
+            <p th:text="${x.count + ' => ' + name}">NAME</p>
+        </div>
+    </body>
+</html>

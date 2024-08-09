@@ -1,0 +1,13 @@
+spring:
+    application: 
+        name: configurationprts
+
+greeting:
+    welcome: Welcome to ${spring.application.name}
+
+name:
+    manager:
+        size: 20
+
+server:
+    port: 9090

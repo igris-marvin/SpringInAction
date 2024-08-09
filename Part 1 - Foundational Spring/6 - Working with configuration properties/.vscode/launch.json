@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigurationprtsApplication<configurationprts>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.foundationalspring.partone.configurationprts.ConfigurationprtsApplication",
+            "projectName": "configurationprts",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
