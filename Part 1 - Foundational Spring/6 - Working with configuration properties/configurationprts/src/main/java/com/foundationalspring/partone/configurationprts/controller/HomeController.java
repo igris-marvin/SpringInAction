@@ -3,23 +3,23 @@ package com.foundationalspring.partone.configurationprts.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.foundationalspring.partone.configurationprts.model.NameManager;
+import com.foundationalspring.partone.configurationprts.model.SizeProp;
 
 @Controller
 @RequestMapping("/")
-@ConfigurationProperties(prefix = "name.manager")
 public class HomeController {
-    
-    private int size = 10;
 
     @Autowired
     private NameManager manager;
+
+    @Autowired
+    private SizeProp sizeProp;
 
     @GetMapping
     public String getHome(
@@ -27,7 +27,7 @@ public class HomeController {
     ) {
         List<String> names = manager.generateNames();
 
-        names = manager.pageableFilter(names, size);
+        names = manager.pageableFilter(names, sizeProp.getSize());
 
         model.addAttribute("names", names);
 

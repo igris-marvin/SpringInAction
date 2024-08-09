@@ -7,7 +7,7 @@ greeting:
 
 name:
     manager:
-        size: 20
+        size: 45
 
 server:
     port: 9090
