@@ -1,0 +1,10 @@
+{
+    "properties": 
+    [
+        {
+            "name": "name.manager.size",
+            "type": "java.lang.Integer",
+            "description": "Sets the maximum number of names to display in a list"
+        }
+    ]
+}

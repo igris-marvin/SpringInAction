@@ -1,0 +1,10 @@
+server:
+    port: 9191
+
+spring:
+  application:
+    name: configurationprts
+
+name:
+  manager:
+    size: 12

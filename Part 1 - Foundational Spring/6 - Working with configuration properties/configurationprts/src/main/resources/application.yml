@@ -1,9 +1,11 @@
 spring:
     application: 
         name: configurationprts
+    profiles:
+        active: prod
 
-greeting:
-    welcome: Welcome to ${spring.application.name}
+# greeting:
+#     welcome: Welcome to ${spring.application.name}
 
 name:
     manager:
@@ -11,3 +13,4 @@ name:
 
 server:
     port: 9090
+
